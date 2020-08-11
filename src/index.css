@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html{
+    background-color: #212121;
+}
+.container-fluid {
+    background-color: #212121;
+}
+.container{
+    background-color: #212121;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img .image{
+    width: auto;
+    height: auto;
 }
+input{
+    color: white;
+}
+.cantidad input{
+    border-radius: 15px;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, .5);
+    border-color: #01adef;
+    text-align: center;
+    width: 60px;
+    outline: #01adef;   
+}
+.pCompra input{
+    border-radius: 15px;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, .5);
+    border-color: #01adef;
+    text-align: center;
+    width: 150px;
+    outline: #01adef;
+}
+.por input{
+    border-radius: 15px;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, .5);
+    border-color: #01adef;
+    text-align: center;
+    width: 60px;
+    outline: #01adef;
+}
+button .btn{
+    width: 50px;
+}
+.resultado{
+    color: #53c0eb;
+    z-index: 10;
+}
+footer  .derechos{
+    padding-top: 420px;
+    z-index: 10;
+    font-size: small;
+    color: ivory;
+} 
