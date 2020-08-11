@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useSuma } from '../hook/useSuma';
+import { LaOperacion } from './LaOperacion';
 
 export const CantidadProductos = () => {
 
@@ -12,11 +13,7 @@ export const CantidadProductos = () => {
     });
 
     const { cantidadP, precioCompra, recargo} = valores;
-
-
-    const recargo1 = parseFloat(valores.recargo / 100);
-    const suma = valores.precioCompra * recargo1 + precioCompra / cantidadP;
-
+    
     return (
         <>
             <form className=' text-center' >
@@ -69,7 +66,7 @@ export const CantidadProductos = () => {
             {
                 show &&
                 <div className='resultado col-12 text-center pt-5'>
-                    <h3 className='mostrar'>Total= {suma}</h3>
+                    <h3 className='mostrar'>Total= {LaOperacion(precioCompra, recargo, cantidadP)}</h3>
                 </div>
             }
             
