@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import TuQuiosko from './components/TuQuiosko';
+import { Main } from './components/Main';
+// import TuQuiosko from './components/TuQuiosko';
+// import { Home } from './components/Home';
+
 
 
 
 ReactDOM.render(
-  <TuQuiosko />,
+  <React.StrictMode>
+    <Main />
+  </React.StrictMode>,
 
   document.getElementById('root')
 );
